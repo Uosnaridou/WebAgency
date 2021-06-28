@@ -1,0 +1,685 @@
+body {
+    width: 100%;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-family: 'Roboto-Light', sans-serif;
+    
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('roboto/Roboto-Light.ttf') format('truetype');
+}
+
+/*-----HEADER ET SLIDER-----*/
+.flottant {
+    float: left;
+    height: 57px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    justify-content: flex-end;
+    height: 95px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #menu {
+    width: 260px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    color: grey;
+    text-decoration: none;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header a:hover {
+    border-top: 3px #5CADD3 solid;
+    height: 88px;
+    height: 88px;
+    color: black;
+}
+div#logoWebAgency {
+    width: 43%;
+}
+.slider {
+    position: relative;
+    margin-top: 95px;
+    overflow: hidden;
+}
+
+.loading {
+    height: 5px;
+    margin-top: -5px;
+    width: 16%;
+    background-color: #5CADD3;
+    bottom: 4px;
+    position: absolute;
+}
+.transparence{
+    background-color: #00000038;
+    height: 5px;
+    bottom: 4px;
+    width: 100%;
+    position: absolute;
+}
+
+#imgSlide {
+    width: 100%;
+    height: auto;
+}
+
+.blocktexte {
+    top: 33%;
+    left: 11%;
+    position: absolute;
+}
+
+#blocktitre {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#blocktitre p {
+    font-size: 14px;
+    display: inline-block;
+}
+
+#flechegauche {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    top: 50%;
+    left: -18px;
+    background-color: rgba(34, 34, 34, 0.42);
+    border-radius: 50%;
+    width: 50px;
+    cursor: pointer;
+}
+
+#flechegauche:hover {
+    background-color: rgba(0, 0, 0, 0.59);
+    transition: 0.5s linear;
+}
+
+#flechedroite:hover {
+    background-color: rgba(0, 0, 0, 0.59);
+    transition: 0.5s linear;
+}
+
+#flechedroite {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    right: -18px;
+    top: 50%;
+    background-color: rgba(34, 34, 34, 0.62);
+    border-radius: 50%;
+    width: 50px;
+    cursor: pointer;
+}
+
+#flechegauche p {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-left: 23%;
+}
+
+#flechedroite p {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-right: 17%
+}
+
+.plusInfos {
+    background-color: #5CADD3;
+    font-size: 15px;
+    box-shadow: 0px 4px 0px #4998B3;
+    width: 15%;
+    border-radius: 5%;
+    height: 3vh;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plusInfos :hover {
+    background-color: #4998B3;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plusInfos p,
+#boutonEnvoyez p {
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+/*-----TOUT LES TITRES-----*/
+
+h1 {
+    color: #5CADD3;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    height: 20px;
+}
+
+h3 {
+    height: 10px;
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 30px;
+    height: 0px;
+}
+
+h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    height: 0px;
+}
+
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*-----PARTIE SERVICES-----*/
+.nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+#premier{
+        margin-bottom: 50px;
+}
+
+.separation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 135px;
+    height: 1px;
+    background-color: #e0e0d1;
+    border: none;
+}
+
+.separation .fa-circle {
+    color: #5CADD3;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #FFF;
+}
+
+.fa-circle:before {
+    content: "\f111";
+}
+
+.contour .fa.fa-circle {
+    background-color: #FFFFFF;
+    color: #5cadd3;
+    position: absolute;
+    left: 79px;
+    top: 32px;
+}
+
+#tout {
+        margin-top: 40px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#ecran {
+    max-width: 25%;
+}
+
+#coterdroit {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.icone {
+margin: auto;
+    height: 83px;
+}
+
+.texte {
+    margin-left: 6%;
+}
+.contour {
+    color: #5CADD3;
+    border: 1px #80808073 solid;
+    border-radius: 50%;
+    width: 87px;
+    border-right: transparent;
+    position: relative;
+}
+
+#pointFleche #pointCube #pointDiagramme {
+    color: #5cadd3;
+    position: absolute;
+    top: 37%;
+    right: 10%;
+}
+
+
+.fa-2x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: flex;
+    height: 33%;
+}
+
+/*-----PARTIE PROJET + PORTFOLIO-----*/
+
+#backgroundColor {
+    background-color: #F5F5F5;
+    top: 36%;
+}
+
+#bouton li:hover i {
+    opacity: 1;
+}
+
+#bouton li:nth-child(1) i {
+    opacity: 1;
+}
+
+#bouton i {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(70, 140, 173);
+    position: absolute;
+    top: 64%;
+    left: 0;
+}
+
+#bouton li:nth-child(1){
+        background-color: #5CADD3;
+    border-bottom: 3px rgb(70, 140, 173) solid;
+    color: white;
+}
+
+#bouton li {
+    border-radius: 2%;
+    display: block;
+    position: relative;
+    width: 85px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #E5E5E5;
+    color: grey;
+    text-decoration: none;
+    float: left;
+    font-weight: bold;
+    font-size: small;
+    border-bottom: 3px solid transparent;
+}
+
+#bouton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#bouton li:hover {
+    background-color: #5CADD3;
+    border-bottom: 3px rgb(70, 140, 173) solid;
+    color: white;
+}
+
+
+
+.nosProjet {
+    background-color: #F5F5F5;
+}
+
+
+/*-----TABLEAU PORTFOLIO-----*/
+
+table {
+    margin: auto;
+    margin-top: 1%;
+}
+
+td {
+    position: relative;
+}
+
+table img {
+    height: 200px;
+    width: 300px;
+}
+
+.rectangle {
+    display: block;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+td:hover .hover {
+    opacity: 1;
+}
+
+.hover {
+    transition: 1s linear;
+    opacity: 0;
+    position: absolute;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 99.4%;
+    height: 40%;
+}
+
+.hover p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#logoOpticien,
+#logoLapin,
+#logoCafe,
+#logoShopping,
+#logoVoyage,
+#logoRobin,
+#logoDossier,
+#logoBureau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5CADD3;
+    color: white;
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    border: 2px white solid;
+    position: absolute;
+    right: 10%;
+    top: -29%
+}
+
+/*-----CARTE + FORMULAIRE (FOOTER)-----*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#noustrouver {
+    display: none;
+}
+
+#carte {
+    position: relative;
+    height: 85vh;
+    width: 75%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    background-color: #5489b7d4;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+#formulaire {
+    border: 2px transparent solid;
+    background-color: rgba(255, 255, 255, 0.79);
+    position: absolute;
+    right: 23%;
+    width: 350px;
+    height: 455px;
+}
+
+#nouscontacter {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+#nouscontacter p {
+    font-size: 14px;
+}
+
+#nom,
+#objet,
+#email {
+    width: 300px;
+    height: 20px;
+}
+
+#commentaire {
+    height: 150px;
+    width: 300px;
+}
+
+#form {
+    margin-left: 20px;
+}
+
+#boutonEnvoyez {
+    background-color: #5CADD3;
+    border-bottom: 4px #4998B3 solid;
+    justify-content: center;
+    width: 51%;
+    border-radius: 5%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+#boutonEnvoyez:hover {
+    background-color: #4998B3;
+    border-bottom: 5px #4998B3 solid;
+}
+
+/*-----MEDIAQUERIES-----*/
+@media screen and (max-width: 1140px) {
+    header {
+        justify-content: center;
+    }
+
+    div#logoWebAgency {
+        width: 74px;
+        overflow: hidden;
+    }
+    #ecran {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .plusInfos {
+        display: none;
+    }
+
+    #tout {
+        display: block;
+        width: 100%;
+    }
+    .texte {
+        text-align: center;
+            margin-left: initial;
+    }
+    #coterdroit {
+        width: 100%;
+    }
+
+    td {
+        display: table;
+    }
+
+    tr {
+        display: inline-table;
+    }
+
+    #formulaire {
+        margin-top: 0;
+        right: auto;
+        position: relative;
+        border: 2px #F5F5F5 solid;
+        background-color: #F5F5F5;
+    }
+
+    #carte {
+        width: 77%;
+        height: 500px;
+        margin-top: 36px;
+    }
+
+    #noustrouver {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        height: 0px;
+        font-weight: bold;
+        margin-top: 38px;
+
+    }
+
+    .hover {
+        bottom: 3%;
+        background-color: rgba(0, 0, 0, 0.35);
+        width: 98.4%;
+        height: 40%;
+    }
+
+    .block {
+        display: block;
+        height: initial;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .icone {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #paragraphe {
+        margin: auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 804px) {
+
+    #blocktitre p,
+    .plusInfos {
+        display: none;
+        margin-left: 30px;
+    }
+
+    .blocktexte {
+        margin-left: 16%;
+        width: 81%;
+        position: initial;
+    }
+    
+    .transparence, .loading{
+        position: relative;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    #blocktitre {
+        font-size: 15px;
+        color: black;
+    }
+
+    #flechedroite,
+    #flechegauche {
+        display: none;
+    }
+
+    #flechedroite p,
+    #flechegauche p {
+        display: none;
+    }
+
+    tr {
+        display: table;
+    }
+    
+}    
+    @media screen and (max-width:320px)  {
+        #bouton li {
+            width: 75px;
+          }   
+        #bouton ul{
+            padding: 0;
+        }
+
+    } 
+
